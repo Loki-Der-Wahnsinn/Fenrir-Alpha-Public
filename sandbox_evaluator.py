@@ -45,8 +45,13 @@ class SandboxEvaluator:
                 tmp_runner_path = rf.name
 
             creationflags = 0x08000000 if sys.platform == "win32" else 0
+            env = os.environ.copy()
+            ws = os.path.abspath(str(self.workspace))
+            env["PYTHONPATH"] = ws + (os.pathsep + env["PYTHONPATH"] if env.get("PYTHONPATH") else "")
             result = subprocess.run(
                 [sys.executable, tmp_runner_path],
+                cwd=ws,
+                env=env,
                 stdin=subprocess.DEVNULL,
                 capture_output=True,
                 text=True,
