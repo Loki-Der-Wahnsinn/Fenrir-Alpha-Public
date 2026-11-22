@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+httpx
+pydantic
+requests
+beautifulsoup4
+huggingface_hub
+pytest

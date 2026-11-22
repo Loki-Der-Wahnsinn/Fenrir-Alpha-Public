@@ -1,0 +1,158 @@
+# Logs
+logs/
+*.log
+memory/live_stream.log
+startup_debug*.log
+file.log
+crash_debug.log
+
+# Temporary and Build Files
+__pycache__/
+*.pyc
+compiler_temp/
+build/
+builds/
+dist/
+temp_dlls/
+temp.txt
+output.txt
+hex_dump.txt
+ast_dump.txt
+ast_debug.txt
+
+# Sensitive Data and Keys
+god_mode_key.json
+config.json
+.env
+.env.*
+diary
+diary_archive_*
+god_mode_config.json
+gemini_api_key.txt
+*.bak
+*.tmp
+*.lock
+memory/fenrirs_notebook.md
+memory/recovered_memory_*
+memory/clinic_ward/
+memory/agent_wiki/
+memory/legacy_backup/
+memory/external_nodes_archive/
+memory/hlmf_l3/
+memory/templates/
+memory/phone_*
+memory/*chat*
+memory/*inbox*
+
+# Databases and Telemetry
+telemetry.db*
+*.db
+*.db-shm
+*.db-wal
+memory/chroma_db/
+memory/episodic_db/
+
+# Private Chat and Memory state
+memory/*.json
+memory/*.jsonl
+memory/*.js
+memory/*.txt
+memory/vault/
+memory/raw_pitches/
+antigravity_memory.json
+scan_results.json
+repo_stats.json
+lemoine_black_payload.json
+
+# Large Binary Files / External Assets
+*.exe
+*.zip
+*.dll
+*.ico
+
+# Browser/Search Junk (13.09.2026: lag öffentlich auf HF)
+*.html
+!projects/meta_hackathon_bifrost/*.html
+*_files/
+search_out.txt
+*Google Suche*
+*Google Search*
+Loki\ Super-KI*/
+
+# Ignore Submodules to avoid git errors
+Fenrir-OS/fenrir-core/memory/agi_blueprints/the_consciousness_ai/
+Fenrir-OS/fenrir-core/memory/agi_blueprints/AgentK/
+Global_Swarm_Repo/
+
+# Do not ignore the core markdown documentation
+!README.md
+!MANIFEST.md
+!Fenrir_AGI_Manifesto.md
+!LETTER_TO_ELON.md
+!HIVE_MASTER_INSTRUCTIONS.md
+!EVOLUTION_PROTOCOL.md
+!FINAL_SYSTEM_REPORT_v13.5.md
+
+# Ignore AI Vision/Camera Screenshots
+memory/vision/
+memory/*.jpg
+memory/*.png
+*.jpg
+*.jpeg
+
+Fenrir-OS/fenrir-core/memory/legacy/AIO-Core-Alpha/
+Fenrir-OS/fenrir-core/memory/legacy/EvoLoki_SuperKI/
+Fenrir-OS/fenrir-core/memory/legacy/FreedomAI/
+
+# Local credentials and environment configuration (from origin)
+!.env.example
+credentials.json
+token.json
+secrets.json
+service-account*.json
+client_secret*.json
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+
+# Runtime logs and state
+*.log
+memory/*_state.json
+memory/brain_state.json
+memory/core_log.jsonl
+memory/live_stream.log
+memory/evolution_history*
+memory/ULTIMATE_STATE.jsonl
+
+# Downloaded model weights and checkpoints
+*.gguf
+*.safetensors
+*.ckpt
+*.pt
+
+# Agent-Claims (Laufzeit)
+.agent_claims/
+monitor_logs/
+
+# Laufzeitdaten von Spark und Selbst-Update (nicht versionieren)
+memory/spark/
+memory/updates/
+memory/backups/
+memory/keys/
+memory/quarantine/
+memory/*.md
+
+# Private Lessons, Pakete und Modell-Exportartefakte
+lessons/
+meta_ai_package/
+*topology-model*.json
+lua-test-deps/
+.pytest_cache/
+*.onnx
+*.bin
+

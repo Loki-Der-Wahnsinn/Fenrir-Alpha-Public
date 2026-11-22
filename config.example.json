@@ -1,0 +1,15 @@
+{
+  "models": {
+    "master_planner": "local-planner-model",
+    "actor_coder": "local-coder-model",
+    "fallback_model": "local-fallback-model"
+  },
+  "memory_paths": {
+    "brain_state": "memory/brain_state.json",
+    "skills_dir": "skills"
+  },
+  "user": {
+    "display_name": "User",
+    "profile_dir": "memory/profiles/default"
+  }
+}
